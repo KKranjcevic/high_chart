@@ -165,7 +165,7 @@ class _HighChartsState extends State<HighCharts> {
     html +=
         '<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/> </head> <body><div style="height:100%;width:100%;" id="highChartsDiv"></div><script>function senthilnasa(a){ eval(a); return true;}</script>';
     for (String src in widget.scripts) {
-      html += '<script async="false" src="$src"></script>';
+      html += '<script src="$src"></script>';
     }
     html += '</body></html>';
     _.loadHtmlString(html);
